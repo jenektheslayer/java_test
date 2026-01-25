@@ -15,13 +15,10 @@ public class Function {
                     chars[left] = chars[right];
                     chars[right] = temp;
                     left++;
-                    right--;
-                } else {
-                    right--;
                 }
+                right--;
             } else left++;
         }
         return new String(chars);
     }
-
 }
